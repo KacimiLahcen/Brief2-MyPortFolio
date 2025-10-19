@@ -200,6 +200,10 @@ h5{
     position: relative;
     top: 30px;
 }
+.services .card:hover{
+    box-shadow: 0 0 10px var(--second-color);
+    transform: scale(1.1);
+}
 .services i{
     color: var(--second-color);
     font-size: 3.12rem;
@@ -208,7 +212,7 @@ h5{
 .services p{
     font-size: 1rem;
     font-weight:300;
-/*    font-style: italic;*/
+    font-style: italic;
 }
 /*projectes*/
 .projects{
@@ -224,6 +228,10 @@ h5{
     width: 300px;
     border-radius: 20px;
     padding: 1.3rem 2rem;
+}
+.projects .card:hover{
+    box-shadow: 0 0 10px var(--second-color);
+    transform: scale(1.1);
 }
 .projects img{
     border-radius: 5px;
@@ -253,7 +261,7 @@ footer p{
 
 
 
-  /* Contaxt  */
+  /* Contact  */
 
                 #contact {
             padding: 8rem 3rem;
@@ -280,7 +288,8 @@ footer p{
         .contact-wrapper {
             max-width: 1200px;
             margin: 0 auto;
-            display: grid;
+            display: flex;
+            flex-wrap: wrap;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
             position: relative;
@@ -331,7 +340,7 @@ footer p{
             background: var(--white);
             padding: 3rem;
             border-radius: 24px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 20px 60px var(--second-color);
         }
 
         .form-group {
@@ -350,7 +359,7 @@ footer p{
         .form-group textarea {
             width: 100%;
             padding: 1rem;
-            border: 2px solid rgba(0, 0, 0, 0.1);
+            border: 2px solid var(--second-color);
             border-radius: 12px;
             font-family: inherit;
             font-size: 1rem;
@@ -416,9 +425,11 @@ footer p{
     .about{
         flex-wrap: wrap-reverse;
         justify-content: center;
+        height: 100%;
     }
     .about .text{
         width: 80%;
+        
     }
     .box{
         flex-wrap: wrap;
@@ -430,6 +441,9 @@ footer p{
     }
     .projects .box .card i{
         font-size: 1.5rem;
+    }
+    .contact-wrapper{
+        margin-left: -9%;
     }
 
 } 
@@ -470,6 +484,9 @@ footer p{
     }
     .projects .box .card i{
         font-size: 1.5rem;
+    }
+    .submit-btn {
+            width: 100%;
     }
 
 }/*Mobile device 990<=width<1279px*/
